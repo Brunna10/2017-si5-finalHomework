@@ -38,10 +38,11 @@ function saveLocalStorage() {
             localStorage.setItem('EMAIL_' + + idEmail.toString(), inputEmail.value);
             localStorage.setItem('DESCRICAO_' + + idDescricao.toString(), inputDescricao.value);
 
+
             clearFields();
 
             alert("Dados salvos com sucesso.");
-
+            
             idNome++;
             idTel++;
             idEmail++;
@@ -71,12 +72,4 @@ function clearFields() {
 
 function loadRegisters() {
     window.location.href = "html/registers.html"; //Abre nova pagina 
-
-    var newRow = document.createElement('td');
-        var body = document.getElementById('col-name');
-        body.appendChild(newRow);
-
-        var content = inputName.value
-        var texto = document.createTextNode(content);
-        newRow.appendChild(texto);
 }
