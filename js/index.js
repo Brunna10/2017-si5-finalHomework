@@ -37,12 +37,11 @@ function saveLocalStorage() {
             localStorage.setItem('TEL_' + idTel.toString(), inputTel.value);
             localStorage.setItem('EMAIL_' + + idEmail.toString(), inputEmail.value);
             localStorage.setItem('DESCRICAO_' + + idDescricao.toString(), inputDescricao.value);
-
-
+            
             clearFields();
 
             alert("Dados salvos com sucesso.");
-            
+
             idNome++;
             idTel++;
             idEmail++;
