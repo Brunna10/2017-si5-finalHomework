@@ -70,5 +70,13 @@ function clearFields() {
 }
 
 function loadRegisters() {
-    
+    window.location.href = "html/registers.html"; //Abre nova pagina 
+
+    var newRow = document.createElement('td');
+        var body = document.getElementById('col-name');
+        body.appendChild(newRow);
+
+        var content = inputName.value
+        var texto = document.createTextNode(content);
+        newRow.appendChild(texto);
 }
