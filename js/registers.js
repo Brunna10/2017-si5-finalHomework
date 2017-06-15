@@ -15,25 +15,26 @@ function load(){
 
     var newRow = document.createElement('tr');
 
-    newRow.appendChild(newColNome);
-    newRow.appendChild(newColTel);
-    newRow.appendChild(newColEmail);
-    newRow.appendChild(newColDescricao);
-
     var table = document.getElementById('tb-register');
+
+    var cont = localStorage.length;
     
-    while(localStorage.length >= loadIdNome){
+    while(cont){
         text= document.createTextNode(localStorage.getItem('NOME_'+loadIdNome.toString()));
         newColNome.appendChild(text);
-
+        newRow.appendChild(newColNome);
+        
         text = document.createTextNode(localStorage.getItem('TEL_'+loadIdTel.toString()));
         newColTel.appendChild(text);
-
+        newRow.appendChild(newColTel);
+       
         text = document.createTextNode(localStorage.getItem('EMAIL_'+loadIdEmail.toString()));
         newColEmail.appendChild(text);
+        newRow.appendChild(newColEmail);
 
         text= document.createTextNode(localStorage.getItem('DESCRICAO_'+loadIdDescricao.toString()));
         newColDescricao.appendChild(text);
+        newRow.appendChild(newColDescricao);
         
         table.appendChild(newRow);
         
@@ -41,5 +42,7 @@ function load(){
         loadIdTel++;
         loadIdEmail++;
         loadIdDescricao++;
+
+        cont = cont - 4;
     }
 }
