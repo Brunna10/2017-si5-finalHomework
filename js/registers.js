@@ -13,30 +13,31 @@ function load(){
     var newColEmail = document.createElement('td');
     var newColDescricao = document.createElement('td');
 
-    var newRow = document.createElement('tr');
-
     var table = document.getElementById('tb-register');
 
     var cont = localStorage.length;
-    
+
     while(cont){
+        numOfRows = table.rows.length;
+        console.log(numOfRows);
+        console.log(cont);
+        var newRow = table.insertRow(numOfRows);
+
         text= document.createTextNode(localStorage.getItem('NOME_'+loadIdNome.toString()));
         newColNome.appendChild(text);
-        newRow.appendChild(newColNome);
-        
+        newColNome = newRow.insertCell(0);
+
         text = document.createTextNode(localStorage.getItem('TEL_'+loadIdTel.toString()));
         newColTel.appendChild(text);
-        newRow.appendChild(newColTel);
+        newColTel = newRow.insertCell(1);
        
         text = document.createTextNode(localStorage.getItem('EMAIL_'+loadIdEmail.toString()));
         newColEmail.appendChild(text);
-        newRow.appendChild(newColEmail);
+        newColEmail = newRow.insertCell(2);
 
         text= document.createTextNode(localStorage.getItem('DESCRICAO_'+loadIdDescricao.toString()));
         newColDescricao.appendChild(text);
-        newRow.appendChild(newColDescricao);
-        
-        table.appendChild(newRow);
+        newColDescricao = newRow.insertCell(3);
         
         loadIdNome++;
         loadIdTel++;
