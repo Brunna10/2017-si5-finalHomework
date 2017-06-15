@@ -21,6 +21,10 @@ body{
     background-color : rgba(255,255,255,0.7);
 }
 
+div{
+    padding: 5px;
+}
+
 .buttons{
     margin: 5px;
     padding:5px;
