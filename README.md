@@ -1,13 +1,13 @@
 # 2017-si5-finalHomework
 
 
-#-----link Trabalho Final-----
+-----link Trabalho Final-----
 
-# http://sigli.ga
+ http://sigli.ga
 
-#-----Serviços Utilizados-----
+-----Serviços Utilizados-----
 
-#  Freenom :  Domínio Gratuito
-#  Hostinger: Serviço de Hospedagem Gratuito
-#  LocalStorage
+  Freenom :  Domínio Gratuito
+  Hostinger: Serviço de Hospedagem Gratuito
+  LocalStorage
  
