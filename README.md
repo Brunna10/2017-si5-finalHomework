@@ -8,6 +8,8 @@
 -----Serviços Utilizados-----
 
   Freenom :  Domínio Gratuito
+
   Hostinger: Serviço de Hospedagem Gratuito
+  
   LocalStorage
  
